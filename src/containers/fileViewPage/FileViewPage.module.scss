@@ -1,0 +1,13 @@
+.fileViewWrapper {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  .fileHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .docView {
+    flex: 1;
+  }
+}

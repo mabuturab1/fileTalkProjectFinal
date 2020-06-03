@@ -1,0 +1,43 @@
+.searchBarWrapper {
+  width: 100%;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+}
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.clear {
+  margin-right: 5rem;
+}
+.close {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.3;
+  transform: translateY(-50%);
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 1rem;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}

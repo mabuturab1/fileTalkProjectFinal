@@ -1,0 +1,44 @@
+.wrapper {
+  background-color: #708cf1;
+  width: 100vw;
+  min-height: 100vh;
+  .contentWrapper {
+    padding: 0 15%;
+    padding-top: 8rem;
+  }
+  .title {
+    margin-bottom: 4rem;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    font-weight: 300;
+    font-family: "Quicksand", "sans-serif";
+  }
+  .signUpForm {
+    min-width: 20rem;
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+  .singleInputWrapper {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .socialMediaTitle {
+    color: white;
+    font-weight: 300;
+    font-family: "Quicksand", "sans-serif";
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .socialMediaWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .singleSocialMediaWrapper {
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+  .buttonWrapper {
+    margin-top: 4rem;
+  }
+}

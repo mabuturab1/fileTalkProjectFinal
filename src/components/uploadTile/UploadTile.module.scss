@@ -1,0 +1,31 @@
+$border-color: #dddddd;
+.uploadTileWrapper {
+  padding-bottom: 2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+
+  .imageStyle {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .title {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    white-space: pre-wrap;
+    width: 100%;
+  }
+  .fileDetails {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+.fullPadding {
+  padding: 2rem;
+}

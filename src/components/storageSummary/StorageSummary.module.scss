@@ -1,0 +1,32 @@
+$border-color: #dddddd;
+$personl-details-color: black;
+$progress-bar-color: #555555;
+.storageWrapper {
+  width: 100%;
+  margin-top: 2rem;
+}
+.storageDetailsWrapper {
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  padding: 2.5rem 1.5rem;
+}
+.singleProgressbar {
+  margin-bottom: 1rem;
+}
+.buttonWrapper {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.titleText {
+  font-size: 1rem;
+  color: $personl-details-color;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.exceededText {
+  font-size: 1rem;
+  color: #ff3a3a;
+  margin-top: 1.5rem;
+  text-align: center;
+}

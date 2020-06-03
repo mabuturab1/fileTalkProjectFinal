@@ -1,0 +1,96 @@
+$text-color: #565656;
+.orderWrapper {
+  display: flex;
+  flex-flow: column;
+}
+.imageTile {
+  display: flex;
+  justify-content: center;
+}
+.discountStyle {
+  font-weight: bold;
+  color: $text-color;
+  margin-left: 1rem;
+}
+.smallText {
+  font-size: 0.7rem;
+  font-weight: normal;
+}
+.title {
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  font-family: "Roboto", "sans-serif";
+  text-align: left;
+}
+.orderDetailsList {
+  list-style: none;
+}
+.singleItem {
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+.label {
+  width: 10rem;
+  color: $text-color;
+  text-align: left;
+  font-size: 0.8rem;
+  font-family: "Roboto", "sans-serif";
+}
+.value {
+  color: $text-color;
+  font-size: 0.8rem;
+  font-family: "Roboto", "sans-serif";
+}
+.bolderText {
+  font-weight: bold;
+}
+
+.bottomMargin {
+  margin-bottom: 1rem;
+}
+.cardSubtitles {
+  margin: 1rem 0;
+  color: $text-color;
+  font-size: 0.7rem;
+}
+.buttonWrapper {
+  margin-top: 4rem;
+}
+.supportedPaymentMethods {
+  width: 100%;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.subscriptionDetails {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+.buttonWrapper {
+  margin-top: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.alignStart {
+  justify-content: flex-start;
+}
+.cancelSubscription {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.singleButtonWrapper {
+  margin: 0 2px;
+}
+.cancelSubscriptionText {
+  font-family: "Roboto", "sans-serif";
+  font-size: 0.7rem;
+  color: black;
+  opacity: 0.7;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}

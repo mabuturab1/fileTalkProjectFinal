@@ -1,0 +1,47 @@
+$textColor: #888888;
+.wrapper {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  .imageStyle {
+    height: 5rem;
+    width: auto;
+  }
+  .textDetails {
+    display: flex;
+    flex-flow: column;
+    padding: 0 1rem;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    .titleWrapper {
+      display: flex;
+      padding: 0.8rem 0;
+    }
+    .title {
+      padding: 0;
+      padding-right: 0.8rem;
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $textColor;
+    }
+    .subtitle {
+      padding: 0rem 0;
+      color: $textColor;
+      font-family: "Roboto", sans-serif;
+      text-align: left;
+    }
+  }
+  .imageList {
+    display: flex;
+    align-items: flex-end;
+  }
+  .userImage {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

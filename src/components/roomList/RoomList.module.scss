@@ -1,0 +1,13 @@
+.roomList {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  overflow: auto;
+
+  .roomItem {
+    height: 7rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

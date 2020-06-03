@@ -1,0 +1,26 @@
+.uploadDetailsWrapper {
+  width: 100%;
+  .breadCrumb {
+    margin-left: 4rem;
+  }
+  .buttonWrapper {
+    display: flex;
+    align-items: center;
+    .newFolderWrapper {
+      margin-left: 2rem;
+    }
+    .upArrow {
+      margin-left: 0.5rem;
+    }
+  }
+  .contentWrapper {
+    margin: 0 10%;
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    .singleUploadTile {
+      margin: 1rem 1rem;
+      width: 10rem;
+    }
+  }
+}

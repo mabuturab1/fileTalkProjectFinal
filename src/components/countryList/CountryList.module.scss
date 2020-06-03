@@ -1,0 +1,22 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  .labelStyle {
+    display: block;
+    margin: 0em 0.85714286em 0em 0em;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 0.92857143em;
+    font-weight: bold;
+    text-transform: none;
+  }
+  .dropdownWrapper {
+    min-width: 20rem;
+    max-width: 25rem;
+    flex: 1;
+  }
+  .maxWidthAuto {
+    max-width: none;
+  }
+}

@@ -1,0 +1,64 @@
+$text-color: #555555;
+.singleFileWrapper {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid grey;
+  display: flex;
+  .imageStyle {
+    height: 5rem;
+  }
+
+  .fileInfo {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    .fileDetails {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      padding: 0.6rem;
+
+      .nameWrapper {
+        display: flex;
+        .name {
+          font-size: 1rem;
+          font-weight: bold;
+          font-family: "Roboto", "sans-serif";
+          font-weight: 500;
+          color: black;
+        }
+        .size {
+          font-size: 1rem;
+          margin-left: 1rem;
+          font-family: "Roboto", "sans-serif";
+          font-weight: 500;
+          color: black;
+        }
+      }
+      .detailsWrapper {
+        display: flex;
+        .author {
+          font-size: 0.8rem;
+          font-family: "Roboto", "sans-serif";
+          font-weight: 500;
+          color: $text-color;
+        }
+        .date {
+          margin-left: 1rem;
+          font-size: 0.8rem;
+          font-family: "Roboto", "sans-serif";
+          font-weight: 500;
+          color: $text-color;
+        }
+      }
+    }
+    .fileInfoOptions {
+      display: flex;
+      .iconStyle {
+        margin: 0 1rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

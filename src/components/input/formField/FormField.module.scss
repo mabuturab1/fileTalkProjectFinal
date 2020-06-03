@@ -1,0 +1,26 @@
+.singleInputWrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.myLabel {
+  text-align: left;
+  font-weight: bold;
+}
+.fullWidth {
+  min-width: 100% !important;
+  max-width: 100% !important;
+}
+.inputWrapper {
+  display: inline-block;
+  min-width: 20rem;
+  max-width: 25rem;
+  flex: 1;
+}
+.errorWrapper {
+  color: #ff604f;
+  display: block;
+}
+.autoMaxWidth {
+  max-width: none;
+}

@@ -1,0 +1,78 @@
+$border-color: #dddddd;
+$personal-details-color: black;
+$progress-bar-color: #555555;
+.accountSummaryWrapper {
+  width: 100%;
+
+  .accountInfo {
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    text-align: left;
+  }
+  .titleText {
+    font-size: 1rem;
+    color: $personal-details-color;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  .personalInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    .image {
+      height: 10rem;
+      width: auto;
+    }
+    .personalDetailsWrapper {
+      text-align: center;
+      font-family: "Roboto", "sans-serif";
+      margin-left: 3rem;
+    }
+    .name {
+      color: $personal-details-color;
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      font-family: inherit;
+    }
+    .place {
+      font-family: 0.8rem;
+      color: $personal-details-color;
+      font-weight: normal;
+      font-family: inherit;
+      margin-bottom: 0.2rem;
+      opacity: 0.7;
+    }
+    .date {
+      font-family: 0.8rem;
+      color: $personal-details-color;
+      font-weight: normal;
+      font-family: inherit;
+      opacity: 0.7;
+    }
+  }
+  .buttonGroup {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    color: $personal-details-color;
+    .personalInfoButton {
+      margin: 0;
+      border-top: 1px solid $border-color;
+      padding: 0.8rem;
+      text-align: center;
+      width: 100%;
+      color: inherit;
+      cursor: pointer;
+      opacity: 0.5;
+    }
+    .personalInfoButton:hover {
+      opacity: 1;
+    }
+    .personalinfobutton:last-child {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+}

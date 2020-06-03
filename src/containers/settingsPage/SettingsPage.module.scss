@@ -1,0 +1,57 @@
+$border-color: #dddddd;
+$menu-width: 15%;
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  display: flex;
+
+  flex-flow: column;
+  align-items: center;
+
+  // padding: 1.5rem 2.5rem;
+
+  .header {
+    width: 100%;
+    display: flex;
+
+    border-bottom: 1px solid $border-color;
+  }
+  .content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    .menu {
+      width: $menu-width;
+    }
+    .menuList {
+      position: absolute;
+      top: 5rem;
+      left: 2%;
+    }
+  }
+  .pageWrapper {
+    width: calc(100% - #{$menu-width});
+    height: 100%;
+    overflow: auto;
+    margin-left: $menu-width;
+    padding: 5% 7%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid $border-color;
+  }
+}
+@media (max-width: 900px) {
+  .wrapper {
+    .content {
+      .menuList {
+        position: relative;
+        width: $menu-width;
+      }
+    }
+  }
+}

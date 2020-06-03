@@ -1,0 +1,28 @@
+$text-color: #565656;
+$border-color: #dddddd;
+.singleLine {
+  color: $text-color;
+  font-size: 0.8rem;
+  font-family: "Roboto", "sans-serif";
+}
+.header {
+  width: 100%;
+  height: 2rem;
+}
+.contentWrapper {
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  padding: 1rem 1%;
+}
+.buttonWrapper {
+  margin-top: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.alignStart {
+  justify-content: flex-start;
+}
+.singleButtonWrapper {
+  margin: 0 2px;
+}

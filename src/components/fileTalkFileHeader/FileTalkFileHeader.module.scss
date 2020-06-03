@@ -1,0 +1,38 @@
+$text-color: #888888;
+.fileTalkWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  border-bottom: 1px solid #dddddd;
+  padding: 0.5rem 0;
+  align-items: center;
+  .leftWrapper {
+    display: flex;
+  }
+  .fileStatus {
+    margin: 0 1rem;
+    color: $text-color;
+  }
+  .fileInfoWrapper {
+    display: flex;
+  }
+  .userOptions {
+    display: flex;
+    align-items: center;
+  }
+  .profileImage {
+    margin: 0 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  .iconStyle {
+    margin: 0 0.4rem;
+    cursor: pointer;
+  }
+  .singleButton {
+    margin: 0 0.4rem;
+  }
+  .pageTitle {
+    color: $text-color;
+  }
+}

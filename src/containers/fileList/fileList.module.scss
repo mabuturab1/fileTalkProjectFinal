@@ -1,0 +1,7 @@
+.fileListWrapper {
+  display: flex;
+  flex-flow: column;
+  .singleFileWrapper {
+    margin: 1rem 0;
+  }
+}

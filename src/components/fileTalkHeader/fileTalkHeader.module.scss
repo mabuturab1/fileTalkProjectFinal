@@ -1,0 +1,30 @@
+.fileTalkWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  .userName {
+    margin: 0 0.5rem;
+  }
+  .userStatus {
+    margin: 0 0.5rem;
+  }
+  .userInfo {
+    display: flex;
+  }
+  .userOptions {
+    display: flex;
+    align-items: center;
+  }
+  .profileImage {
+    margin: 0 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  .iconStyle {
+    margin: 0 0.4rem;
+  }
+  .singleButton {
+    margin: 0 0.4rem;
+  }
+}

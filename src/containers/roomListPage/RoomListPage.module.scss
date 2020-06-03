@@ -1,0 +1,17 @@
+.roomLisPageWrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  max-width: 40rem;
+
+  width: 80%;
+  height: 100%;
+  .buttonWrapper {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .inputWrapper {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}

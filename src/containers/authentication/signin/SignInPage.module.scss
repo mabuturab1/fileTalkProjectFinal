@@ -1,0 +1,68 @@
+.wrapper {
+  background-color: #708cf1;
+  width: 100vw;
+  min-height: 100vh;
+  .contentWrapper {
+    padding: 0 15%;
+    padding-top: 8rem;
+  }
+  .title {
+    margin-bottom: 4rem;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    font-weight: 300;
+    font-family: "Quicksand", "sans-serif";
+  }
+  .signInForm {
+    min-width: 20rem;
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+  .singleInputWrapper {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .socialMediaWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .singleSocialMediaWrapper {
+    margin: 0 1rem;
+  }
+  .buttonWrapper {
+    margin-top: 1rem;
+  }
+  .forgotPassword {
+    color: white;
+    font-family: "Quicksand", "sans-serif";
+    margin: 1.5rem auto;
+    font-weight: 300;
+    cursor: pointer;
+    display: inline-block;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .signUpLink {
+    color: white;
+    font-family: "Quicksand", "sans-serif";
+    margin: 2.5rem auto;
+    font-weight: 300;
+    display: inline-block;
+
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .logInError {
+    color: black;
+    font-family: "Quicksand", "sans-serif";
+    margin: 1.5rem auto;
+    font-weight: bold;
+    display: inline-block;
+  }
+}
