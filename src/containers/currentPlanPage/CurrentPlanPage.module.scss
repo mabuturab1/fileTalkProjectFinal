@@ -7,15 +7,15 @@ $text-color-description: #565656;
 
   .currentSubscriptionTitle {
     font-family: "Roboto", "sans-serif";
-    font-size: 1rem;
+    font-size: 16px;
     color: $text-color-head;
     font-weight: normal;
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
   }
   .planDetailsWrapper {
     border: 1px solid $border-color;
-    padding: 2rem;
+    padding: 32px;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -34,15 +34,15 @@ $text-color-description: #565656;
   .planType {
     font-family: "Roboto", "sans-serif";
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 16px;
     text-align: left;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
     color: $text-color-head;
   }
   .buttonWrapper {
     position: relative;
-    padding: 0 2rem;
-    margin-top: 2.5rem;
+    padding: 0 32px;
+    margin-top: 40px;
 
     display: flex;
     justify-content: space-between;
@@ -58,17 +58,17 @@ $text-color-description: #565656;
   }
   .singleDetail {
     display: flex;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
     .singleDetailLabel {
       color: $text-color-description;
-      font-size: 1rem;
+      font-size: 16px;
       width: 160px;
       text-align: left;
-      margin-right: 1rem;
+      margin-right: 16px;
     }
     .singleDetailValue {
       color: $text-color-description;
-      font-size: 1rem;
+      font-size: 16px;
       flex: 1;
       text-align: left;
     }

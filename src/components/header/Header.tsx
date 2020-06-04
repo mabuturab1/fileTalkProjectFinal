@@ -25,7 +25,7 @@ const myheader = (props: HeaderProps) => {
           <Button
             type={"secondary"}
             label={"Upgrade now"}
-            padding={["0.8rem", "4rem"]}
+            padding={["13px", "64px"]}
           />
         </div>
 

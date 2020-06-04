@@ -49,7 +49,7 @@ const PaymentDetails = ({
               name={"fullName"}
               value={values.fullName}
               touched={touched.fullName}
-              labelStyle={{ width: "5rem" }}
+              labelStyle={{ width: "80px" }}
               maxWidthAuto={true}
             />
           </div>
@@ -61,7 +61,7 @@ const PaymentDetails = ({
               name={"country"}
               value={values.country}
               touched={touched.country}
-              labelStyle={{ width: "5rem" }}
+              labelStyle={{ width: "80px" }}
               maxWidthAuto={true}
             />
           </div>
@@ -94,7 +94,7 @@ const PaymentDetails = ({
             <Button
               disabled={isSubmitting}
               onClick={handleSubmit}
-              padding={["0.8rem", "6rem"]}
+              padding={["13px", "96px"]}
               label={"Pay " + values.totalAmount}
               showLoader={isSubmitting}
             />
@@ -102,7 +102,7 @@ const PaymentDetails = ({
             <Button
               disabled={isSubmitting}
               onClick={handleSubmit}
-              padding={["0.8rem", "6rem"]}
+              padding={["13px", "96px"]}
               label={"Payment Error"}
               backgroundColor={"#DDDDDD"}
               isErrorText={true}

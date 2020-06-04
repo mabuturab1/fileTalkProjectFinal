@@ -79,7 +79,7 @@ const SignUpPage = ({
                 backgroundColor={"#355BE4"}
                 hoverColor={"#6435c9"}
                 label={"Register"}
-                style={{ borderRadius: "2.5rem" }}
+                style={{ borderRadius: "40px" }}
                 width={"128px"}
                 height={"56px"}
               />

@@ -20,30 +20,30 @@ $offers-height: 400px;
     justify-content: flex-start;
     align-items: center;
     flex-flow: column;
-    padding: 1rem;
+    padding: 16px;
   }
 
   .mainText {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-family: inherit;
     padding: 5px;
     margin: 0;
   }
   .subscript {
-    font-size: 1rem;
-    line-height: 1.2rem;
+    font-size: 16px;
+    line-height: 19px;
     font-family: inherit;
   }
   .mediumText {
-    font-size: 1.5rem;
-    line-height: 1.7rem;
+    font-size: 24px;
+    line-height: 27px;
     font-family: inherit;
     padding: 5px;
     margin: 0;
   }
   .smallText {
-    font-size: 1rem;
-    line-height: 1.2rem;
+    font-size: 16px;
+    line-height: 19px;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     padding: 5px;
@@ -56,7 +56,7 @@ $offers-height: 400px;
     align-items: center;
     // height: 60%;
     height: $offers-height;
-    padding: 3rem 3rem 3rem 3rem;
+    padding: 48px 48px 48px 48px;
   }
   .offersList {
     list-style: none;
@@ -64,11 +64,11 @@ $offers-height: 400px;
   }
   .singleOffer {
     text-align: left;
-    font-size: 0.8rem;
+    font-size: 13px;
     color: $subscription-offers-color;
     padding: 3px 0rem;
   }
   .buttonWrapper {
-    margin: 0rem 0 2rem 0;
+    margin: 0rem 0 32px 0;
   }
 }

@@ -1,7 +1,7 @@
 $textColor: #888888;
 .wrapper {
   display: flex;
-  padding: 1rem;
+  padding: 16px;
   width: 100%;
   height: 100%;
   border: 1px solid #dddddd;
@@ -13,19 +13,19 @@ $textColor: #888888;
   .textDetails {
     display: flex;
     flex-flow: column;
-    padding: 0 1rem;
+    padding: 0 16px;
     width: 100%;
     height: 100%;
     justify-content: center;
     .titleWrapper {
       display: flex;
-      padding: 0.8rem 0;
+      padding: 13px 0;
     }
     .title {
       padding: 0;
-      padding-right: 0.8rem;
+      padding-right: 13px;
       font-family: "Roboto", sans-serif;
-      font-size: 1rem;
+      font-size: 16px;
       font-weight: 500;
       color: $textColor;
     }

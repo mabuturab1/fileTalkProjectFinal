@@ -143,7 +143,7 @@ const OrderSummary = (props: OrderSummaryProps) => {
       ) : null}
       {!props.isAlreadySet ? (
         <div className={styles.buttonWrapper}>
-          <Button onClick={props.onProceed} width={"15rem"} label={"Proceed"} />
+          <Button onClick={props.onProceed} width={"240px"} label={"Proceed"} />
         </div>
       ) : (
         <div className={[styles.buttonWrapper, styles.alignStart].join(" ")}>

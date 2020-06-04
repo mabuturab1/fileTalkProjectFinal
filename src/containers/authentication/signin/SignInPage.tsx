@@ -66,7 +66,7 @@ const SignInPage = ({
                 label={"Sign in"}
                 width={"128px"}
                 height={"56px"}
-                style={{ borderRadius: "2.5rem" }}
+                style={{ borderRadius: "40px" }}
               />
             </div>
             <Link to="/sign-up">

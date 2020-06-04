@@ -8,7 +8,7 @@ $border-color: #dddddd;
 }
 .singleLine {
   color: $text-color;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-family: "Roboto", "sans-serif";
 }
 .header {
@@ -18,10 +18,10 @@ $border-color: #dddddd;
 .contentWrapper {
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
-  padding: 1rem 1%;
+  padding: 16px 5px;
 }
 .buttonWrapper {
-  margin-top: 2.5rem;
+  margin-top: 40px;
   width: 100%;
   display: flex;
   justify-content: center;

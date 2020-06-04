@@ -8,7 +8,7 @@
   flex-flow: column;
   align-items: center;
   height: 100vh;
-  padding: 1.5rem 2.5rem;
+  padding: 24px 40px;
 
   .header {
     width: 100%;
@@ -24,7 +24,7 @@
     }
     .menuList {
       position: absolute;
-      top: 5rem;
+      top: 80px;
       left: 2%;
     }
   }
@@ -41,7 +41,7 @@
   .tableWrapper {
     width: 50%;
     margin: 0 auto;
-    padding-bottom: 4rem;
+    padding-bottom: 64px;
     .pdfLink {
       cursor: pointer;
     }

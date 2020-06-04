@@ -29,7 +29,7 @@ const formField = (props: formFieldProps) => {
     inputClasses.push(styles.fullWidth);
     labelStyle = {
       ...labelStyle,
-      marginBottom: "0.3rem",
+      marginBottom: "5px",
     };
   }
   if (props.maxWidthAuto) inputClasses.push(styles.autoMaxWidth);

@@ -10,14 +10,14 @@ $text-color: #565656;
 .discountStyle {
   font-weight: bold;
   color: $text-color;
-  margin-left: 1rem;
+  margin-left: 16px;
 }
 .smallText {
-  font-size: 0.7rem;
+  font-size: 11px;
   font-weight: normal;
 }
 .title {
-  font-size: 1rem;
+  font-size: 16px;
   color: black;
   font-weight: bold;
   font-family: "Roboto", "sans-serif";
@@ -28,18 +28,18 @@ $text-color: #565656;
 }
 .singleItem {
   display: flex;
-  margin-bottom: 0.8rem;
+  margin-bottom: 13px;
 }
 .label {
   width: 160px;
   color: $text-color;
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-family: "Roboto", "sans-serif";
 }
 .value {
   color: $text-color;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-family: "Roboto", "sans-serif";
 }
 .bolderText {
@@ -47,28 +47,28 @@ $text-color: #565656;
 }
 
 .bottomMargin {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 .cardSubtitles {
-  margin: 1rem 0;
+  margin: 16px 0;
   color: $text-color;
-  font-size: 0.7rem;
+  font-size: 11px;
 }
 .buttonWrapper {
-  margin-top: 4rem;
+  margin-top: 64px;
 }
 .supportedPaymentMethods {
   width: 100%;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 64px;
 }
 .subscriptionDetails {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 .buttonWrapper {
-  margin-top: 2.5rem;
+  margin-top: 40px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -86,7 +86,7 @@ $text-color: #565656;
 }
 .cancelSubscriptionText {
   font-family: "Roboto", "sans-serif";
-  font-size: 0.7rem;
+  font-size: 11px;
   color: black;
   opacity: 0.7;
   text-decoration: none;

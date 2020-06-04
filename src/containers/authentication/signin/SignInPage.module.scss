@@ -4,12 +4,12 @@
   min-height: 100vh;
   .contentWrapper {
     padding: 0 15%;
-    padding-top: 8rem;
+    padding-top: 128px;
   }
   .title {
-    margin-bottom: 4rem;
+    margin-bottom: 64px;
     color: white;
-    font-size: 2rem;
+    font-size: 32px;
     letter-spacing: 4px;
     font-weight: 300;
     font-family: "Quicksand", "sans-serif";
@@ -21,7 +21,7 @@
   }
   .singleInputWrapper {
     width: 100%;
-    margin: 1rem 0;
+    margin: 16px 0;
   }
 
   .socialMediaWrapper {
@@ -29,15 +29,15 @@
     justify-content: center;
   }
   .singleSocialMediaWrapper {
-    margin: 0 1rem;
+    margin: 0 16px;
   }
   .buttonWrapper {
-    margin-top: 1rem;
+    margin-top: 16px;
   }
   .forgotPassword {
     color: white;
     font-family: "Quicksand", "sans-serif";
-    margin: 1.5rem auto;
+    margin: 24px auto;
     font-weight: 300;
     cursor: pointer;
     display: inline-block;
@@ -49,7 +49,7 @@
   .signUpLink {
     color: white;
     font-family: "Quicksand", "sans-serif";
-    margin: 2.5rem auto;
+    margin: 40px auto;
     font-weight: 300;
     display: inline-block;
 
@@ -61,7 +61,7 @@
   .logInError {
     color: black;
     font-family: "Quicksand", "sans-serif";
-    margin: 1.5rem auto;
+    margin: 24px auto;
     font-weight: bold;
     display: inline-block;
   }

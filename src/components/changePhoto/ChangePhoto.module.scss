@@ -13,8 +13,8 @@ $border-color: #dddddd;
 }
 
 .imageEditor {
-  margin: 2rem 0;
-  padding-bottom: 2rem;
+  margin: 32px 0;
+  padding-bottom: 32px;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid $border-color;
@@ -26,11 +26,11 @@ $border-color: #dddddd;
   .changePhotoLink {
     margin: 0;
     border-top: 1px solid $border-color;
-    padding: 0.8rem;
+    padding: 13px;
     text-align: center;
 
     color: inherit;
-    margin: 0 1rem;
+    margin: 0 16px;
     cursor: pointer;
     opacity: 0.5;
     &:hover {
@@ -39,7 +39,7 @@ $border-color: #dddddd;
   }
 }
 .buttonWrapper {
-  margin-top: 2rem;
+  margin-top: 32px;
   display: flex;
   justify-content: center;
 }

@@ -5,7 +5,7 @@ $text-color: #444444;
   position: relative;
   flex-flow: column;
   width: 100%;
-  padding: 2rem 4rem;
+  padding: 32px 64px;
   .cancelButton {
     border: none;
     background: transparent;
@@ -13,8 +13,8 @@ $text-color: #444444;
     cursor: pointer;
     position: absolute;
     font-family: "Roboto", "sans-serif";
-    top: 1rem;
-    right: 4rem;
+    top: 16px;
+    right: 64px;
   }
   .cancelButton:hover {
     text-decoration: underline;
@@ -25,7 +25,7 @@ $text-color: #444444;
   }
   .headerTitle {
     color: $text-color;
-    font-size: 1.2rem;
+    font-size: 19px;
     font-family: "Roboto", "sans-serif";
     font-weight: bold;
   }
@@ -34,12 +34,12 @@ $text-color: #444444;
   }
   .contentWrapper {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 16px;
   }
   .titleText {
-    font-size: 1rem;
+    font-size: 16px;
     color: black;
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
   }
 }
