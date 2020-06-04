@@ -1,5 +1,13 @@
+@import "./globalStyles/base.scss";
 .App {
   text-align: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.App-body {
+  min-width: $app-body-width !important;
+  min-height: $app-body-height !important;
 }
 
 .App-logo {

@@ -64,8 +64,8 @@ const SignInPage = ({
                 backgroundColor={"#355BE4"}
                 hoverColor={"#6435c9"}
                 label={"Sign in"}
-                width={"8rem"}
-                height={"3.5rem"}
+                width={"128px"}
+                height={"56px"}
                 style={{ borderRadius: "2.5rem" }}
               />
             </div>

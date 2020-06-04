@@ -18,7 +18,7 @@ interface formFieldProps {
 }
 const formField = (props: formFieldProps) => {
   let labelStyle: any = {
-    width: "10rem",
+    width: "160px",
     color: "black",
   };
   let inputClasses = [styles.inputWrapper];

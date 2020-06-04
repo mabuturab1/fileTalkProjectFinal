@@ -17,7 +17,7 @@ const table = (props: TableProps) => {
     }
   return (
     <div className={styles.paginationTableWrapper}>
-      <Table celled>
+      <Table unstackable={true} celled>
         <TableHeader header={props.header} />
         <Table.Body>{tableRows}</Table.Body>
       </Table>

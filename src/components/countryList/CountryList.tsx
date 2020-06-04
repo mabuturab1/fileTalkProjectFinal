@@ -33,7 +33,7 @@ const countryList = (props: CountryListProps) => {
     classes.push(styles.maxWidthAuto);
   }
   let labelStyle = {
-    width: "10rem",
+    width: "160px",
     color: "black",
   };
   labelStyle = {

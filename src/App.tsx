@@ -30,32 +30,34 @@ function App() {
       }}
     >
       <div className="App">
-        <Router>
-          <Switch>
-            <Route
-              path={routes.signIn}
-              render={(props) => (
-                <SignIn {...props} setAuthStatus={setAuthenticationStatus} />
-              )}
-            />
+        <div className="App-body">
+          <Router>
+            <Switch>
+              <Route
+                path={routes.signIn}
+                render={(props) => (
+                  <SignIn {...props} setAuthStatus={setAuthenticationStatus} />
+                )}
+              />
 
-            <Route
-              path={routes.signUp}
-              render={(props) => (
-                <SignUp {...props} setAuthStatus={setAuthenticationStatus} />
-              )}
-            />
+              <Route
+                path={routes.signUp}
+                render={(props) => (
+                  <SignUp {...props} setAuthStatus={setAuthenticationStatus} />
+                )}
+              />
 
-            <Route path={routes.fileTalkMainPage} component={FileTalk} />
-            <Route
-              path={routes.orderSubscriptionPage}
-              component={OrderSubscriptionPage}
-            />
-            <Route path={routes.invoicePage} component={InvoicePage} />
-            <Route path={routes.mainPage} component={HomePage} />
-            <Redirect to="/" />
-          </Switch>
-        </Router>
+              <Route path={routes.fileTalkMainPage} component={FileTalk} />
+              <Route
+                path={routes.orderSubscriptionPage}
+                component={OrderSubscriptionPage}
+              />
+              <Route path={routes.invoicePage} component={InvoicePage} />
+              <Route path={routes.mainPage} component={HomePage} />
+              <Redirect to="/" />
+            </Switch>
+          </Router>
+        </div>
       </div>
     </AuthContext.Provider>
   );

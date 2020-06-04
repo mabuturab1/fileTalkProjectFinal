@@ -150,8 +150,8 @@ const BillingInformation = ({
             onClick={handleSubmit}
             label={"Save Changes"}
             showLoader={isSubmitting}
-            width={"9.3rem"}
-            height={"2.6rem"}
+            width={"148px"}
+            height={"41px"}
           />
         </div>
       </div>

@@ -80,8 +80,8 @@ const SignUpPage = ({
                 hoverColor={"#6435c9"}
                 label={"Register"}
                 style={{ borderRadius: "2.5rem" }}
-                width={"8rem"}
-                height={"3.5rem"}
+                width={"128px"}
+                height={"56px"}
               />
             </div>
             <h4 className={styles.socialMediaTitle}>Or sign in with</h4>

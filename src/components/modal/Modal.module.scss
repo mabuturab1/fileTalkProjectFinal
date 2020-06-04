@@ -6,16 +6,18 @@
   z-index: 1000;
   animation: fadeInColor ease 0.1s;
   animation-delay: 0.5s;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 
   .content {
     height: 95%;
     width: 85%;
     margin: auto;
-    position: absolute;
+
     background: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
     animation: fadeIn ease-in-out 0.5s;
     animation-delay: 0;
   }

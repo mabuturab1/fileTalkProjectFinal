@@ -1,5 +1,11 @@
 $text-color: #565656;
 $border-color: #dddddd;
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
 .singleLine {
   color: $text-color;
   font-size: 0.8rem;
@@ -7,7 +13,7 @@ $border-color: #dddddd;
 }
 .header {
   width: 100%;
-  height: 2rem;
+  height: flex 0 0 32px;
 }
 .contentWrapper {
   border-top: 1px solid $border-color;

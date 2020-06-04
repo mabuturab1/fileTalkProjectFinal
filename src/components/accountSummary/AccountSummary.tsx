@@ -47,7 +47,7 @@ const AccountSummary = (props: AccountSummaryProps) => {
         </SemanticModal>
       ) : null}
       {showEditPhoto ? (
-        <SemanticModal size="small" style={{ backgroundColor: "white" }}>
+        <SemanticModal size="tiny" style={{ backgroundColor: "white" }}>
           <ChangePhoto
             onClose={() => setEditPhoto(false)}
             imageSrc={userDataContext.imageSrc}

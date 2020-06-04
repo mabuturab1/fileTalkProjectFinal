@@ -20,7 +20,16 @@ const SemanticModal = (props: SemanticModalProps) => {
       style={style}
       centered={true}
     >
-      <Modal.Content>{props.children}</Modal.Content>
+      <Modal.Content
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          flexFlow: "column",
+        }}
+      >
+        {props.children}
+      </Modal.Content>
     </Modal>
   );
 };

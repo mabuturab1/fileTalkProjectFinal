@@ -27,7 +27,7 @@ const RoomListPage = (props: any) => {
     <div className={styles.roomLisPageWrapper}>
       <Link to={routes.fileTalkMainPage}>
         <div className={styles.buttonWrapper}>
-          <Button width={"100%"} height={"4rem"} label={"Start new filetalk"} />
+          <Button width={"100%"} height={"48px"} label={"Start new filetalk"} />
         </div>
       </Link>
       <div className={styles.inputWrapper}>

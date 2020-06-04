@@ -107,8 +107,8 @@ const EditProfile = ({
               onClick={handleSubmit}
               label={"Save Changes"}
               showLoader={isSubmitting}
-              width={"10rem"}
-              height={"3rem"}
+              width={"160px"}
+              height={"40px"}
             />
           </div>
         </Form>

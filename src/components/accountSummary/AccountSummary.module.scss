@@ -3,7 +3,7 @@ $personal-details-color: black;
 $progress-bar-color: #555555;
 .accountSummaryWrapper {
   width: 100%;
-
+  margin: auto;
   .accountInfo {
     border: 1px solid $border-color;
     border-radius: 10px;
@@ -21,7 +21,7 @@ $progress-bar-color: #555555;
     align-items: center;
     padding: 1rem;
     .image {
-      height: 10rem;
+      height: 160px;
       width: auto;
     }
     .personalDetailsWrapper {

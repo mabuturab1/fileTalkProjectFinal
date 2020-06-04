@@ -83,13 +83,13 @@ const editPaymentMethod = ({
             showLoader={isSubmitting}
             disabled={isSubmitting}
             label={"Save Changes"}
-            width={"10rem"}
+            width={"140px"}
             onClick={handleSubmit}
           />
           <Button
             onClick={values.onClose}
             label={"Cancel"}
-            width={"9rem"}
+            width={"144px"}
             backgroundColor={"transparent"}
             style={{ color: "black", fontFamily: "Roboto", fontWeight: 400 }}
           />

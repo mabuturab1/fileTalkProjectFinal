@@ -44,10 +44,10 @@ const StorageSummary = (props: StorageSummaryProps) => {
             onClick={props.changePlanButton}
             label={exceeded ? "Re-active plan" : "Upgrade"}
             type={"secondary"}
-            width={"14rem"}
-            height={"2.5rem"}
+            width={"220px"}
+            height={"40px"}
             style={{
-              maxWidth: "14rem",
+              maxWidth: "220px",
               width: "100%",
             }}
           />

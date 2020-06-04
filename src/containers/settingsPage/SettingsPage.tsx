@@ -48,25 +48,27 @@ const SettingsPage = (props: SettingsPageProps) => {
       <SemanticModal
         open={true}
         size="large"
-        style={{ backgroundColor: "white", minHeight: "90vh", width: "80vw" }}
+        style={{ backgroundColor: "white" }}
       >
         <div className={styles.wrapper}>
           <div className={styles.header}>
             <HeaderText onCancel={props.onClose} titleText={menuItem} />
           </div>
           <div className={styles.content}>
-            <div className={styles.menuList}>
-              <Menu
-                activeItem={menuItem}
-                items={["Profile", "Storage", "Subscription", "Billing"]}
-                toLink={[
-                  routes.mainPage,
-                  routes.mainPage,
-                  routes.mainPage,
-                  routes.mainPage,
-                ]}
-                itemClicked={menuItemClicked}
-              />
+            <div className={styles.menu}>
+              <div className={styles.menuList}>
+                <Menu
+                  activeItem={menuItem}
+                  items={["Profile", "Storage", "Subscription", "Billing"]}
+                  toLink={[
+                    routes.mainPage,
+                    routes.mainPage,
+                    routes.mainPage,
+                    routes.mainPage,
+                  ]}
+                  itemClicked={menuItemClicked}
+                />
+              </div>
             </div>
 
             <div className={styles.pageWrapper}>{getPage(menuItem)}</div>
