@@ -13,9 +13,9 @@ $progress-bar-color: #555555;
     align-items: flex-start;
     flex-wrap: wrap;
     .progressBar {
-      min-width: 160px;
-      width: 80%;
-      max-width: 480px;
+      // min-width: 160px;
+      width: 450px;
+      // max-width: 480px;
     }
     .progressBarLabel {
       flex: 1;
