@@ -7,7 +7,7 @@ $text-color-description: #565656;
 
   .currentSubscriptionTitle {
     font-family: "Roboto", "sans-serif";
-    font-size: 16px;
+    font-size: 14px;
     color: $text-color-head;
     font-weight: normal;
     text-align: left;
@@ -34,7 +34,7 @@ $text-color-description: #565656;
   .planType {
     font-family: "Roboto", "sans-serif";
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
     margin-bottom: 8px;
     color: $text-color-head;
@@ -61,14 +61,14 @@ $text-color-description: #565656;
     margin-bottom: 8px;
     .singleDetailLabel {
       color: $text-color-description;
-      font-size: 16px;
+      font-size: 14px;
       width: 160px;
       text-align: left;
       margin-right: 16px;
     }
     .singleDetailValue {
       color: $text-color-description;
-      font-size: 16px;
+      font-size: 14px;
       flex: 1;
       text-align: left;
     }

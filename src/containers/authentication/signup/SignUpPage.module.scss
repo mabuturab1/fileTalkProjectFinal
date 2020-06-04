@@ -3,13 +3,16 @@
   width: 100vw;
   min-height: 100vh;
   .contentWrapper {
-    padding: 0 15%;
     padding-top: 128px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
   }
   .title {
-    margin-bottom: 64px;
+    margin-bottom: 56px;
     color: white;
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing: 4px;
     font-weight: 300;
     font-family: "Quicksand", "sans-serif";
