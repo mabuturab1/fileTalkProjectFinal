@@ -10,9 +10,11 @@ $border-color: #dddddd;
   flex: 0 0 32px;
   border-bottom: 1px solid $border-color;
 }
+
 .cardDetails {
   margin-top: 48px;
 }
+
 .cardSubtitles {
   color: black;
   text-align: center;
@@ -28,7 +30,7 @@ $border-color: #dddddd;
   justify-content: center;
 }
 .buttonWrapper {
-  margin-top: 32px;
+  margin: 32px 0;
   display: flex;
   justify-content: center;
 }

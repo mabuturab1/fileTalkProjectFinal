@@ -6,6 +6,7 @@ $border-color: #dddddd;
   display: flex;
   flex-flow: column;
 }
+
 .singleLine {
   color: $text-color;
   font-size: 11px;
@@ -13,18 +14,19 @@ $border-color: #dddddd;
 }
 .header {
   width: 100%;
-  height: flex 0 0 32px;
-}
-.contentWrapper {
-  border-top: 1px solid $border-color;
+  flex: 0 0 32px;
   border-bottom: 1px solid $border-color;
-  padding: 16px 5px;
+}
+.content {
+  border-bottom: 1px solid $border-color;
+  padding: 16px 20px;
 }
 .buttonWrapper {
-  margin-top: 40px;
+  margin: 20px 0;
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-left: 20px;
 }
 .alignStart {
   justify-content: flex-start;

@@ -1,8 +1,18 @@
 $text-color: #565656;
+$border-color: #dddddd;
 .orderWrapper {
   display: flex;
   flex-flow: column;
 }
+.orderContent {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.content {
+  padding: 0;
+}
+
 .imageTile {
   display: flex;
   justify-content: center;
@@ -29,6 +39,7 @@ $text-color: #565656;
 .singleItem {
   display: flex;
   margin-bottom: 13px;
+  width: 335px;
 }
 .label {
   width: 160px;
@@ -54,9 +65,7 @@ $text-color: #565656;
   color: $text-color;
   font-size: 11px;
 }
-.buttonWrapper {
-  margin-top: 64px;
-}
+
 .supportedPaymentMethods {
   width: 100%;
   justify-content: center;
@@ -68,18 +77,28 @@ $text-color: #565656;
   margin-bottom: 32px;
 }
 .buttonWrapper {
-  margin-top: 40px;
+  margin: 32px 0 32px 0;
+
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 0 20px;
+}
+.buttonWrapperChangePlan {
+  margin-top: 20px;
+  padding-top: 20px;
 }
 .alignStart {
   justify-content: flex-start;
 }
+.borderTop {
+  border-top: 1px solid $border-color;
+}
 .cancelSubscription {
   display: flex;
   justify-content: flex-end;
-  cursor: pointer;
+
+  padding: 0 20px 0px 0;
 }
 .singleButtonWrapper {
   margin: 0 2px;
@@ -90,6 +109,7 @@ $text-color: #565656;
   color: black;
   opacity: 0.7;
   text-decoration: none;
+  cursor: pointer;
   &:hover {
     text-decoration: underline;
   }

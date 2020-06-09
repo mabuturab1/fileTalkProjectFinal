@@ -32,9 +32,6 @@ const OrderSubscriptionPage = (props: OrderPageProps) => {
     props.onPaid(tempBillingAnnually);
   };
 
-  let contentStyle = {
-    padding: "0 15%",
-  };
   let orderSummaryData = props.getOrderSummaryData(tempBillingAnnually);
   const getTitleText = () => {
     if (showOrderSummary && !props.isAlreadySet) return "Order Summary";
@@ -52,7 +49,6 @@ const OrderSubscriptionPage = (props: OrderPageProps) => {
             onClose={props.onClose}
             totalAmount={orderSummaryData.totalAmount}
             onPay={onPaid}
-            contentStyle={contentStyle}
           />
         ) : null}
         {showOrderSummary ? (
@@ -62,7 +58,6 @@ const OrderSubscriptionPage = (props: OrderPageProps) => {
             onChangePlan={() => props.onChangePlan(tempBillingAnnually)}
             onCancelPlan={props.onCancelPlan}
             isAlreadySet={props.isAlreadySet}
-            contentStyle={contentStyle}
             onClose={props.onClose}
             isAnnualBilling={tempBillingAnnually}
             billingStatusChanged={(val: boolean) => setTempBillingAnnually(val)}

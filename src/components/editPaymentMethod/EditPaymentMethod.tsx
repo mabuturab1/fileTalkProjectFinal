@@ -6,7 +6,7 @@ import PaymentMethod from "../../assets/images/PaymentMethod.png";
 import PaymentMethod1 from "../../assets/images/PaymentMethod1.png";
 import PaymentMethod2 from "../../assets/images/PaymentMethod2.png";
 import PaymentMethod3 from "../../assets/images/PaymentMethod3.png";
-
+import CreditCardInput from "../../components/creditCardInput/CreditCardInput";
 import Button from "../input/button/Button";
 import { withFormik } from "formik";
 import * as Yup from "yup";
@@ -37,12 +37,6 @@ const editPaymentMethod = ({
     return list;
   };
 
-  const formData = {
-    creditCardNumber: {
-      label: "Credit or debit card",
-      placeholder: "Card Number",
-    },
-  };
   return (
     <div className={styles.wrapper}>
       <div className={styles.header}>
@@ -53,18 +47,14 @@ const editPaymentMethod = ({
       </div>
       <div className={styles.contentWrapper} style={values.contentStyle}>
         <div className={styles.cardDetails}>
-          <InputFormField
-            customIcon={"icon-card-icon"}
-            error={errors.creditCardNumber}
-            elementConfig={formData.creditCardNumber}
+          <CreditCardInput
+            values={values}
+            errors={errors}
+            touched={touched}
             handleChange={handleChange}
-            name={"creditCardNumber"}
-            value={values.creditCardNumber}
-            touched={touched.creditCardNumber}
-            isInputFullWidth={true}
           />
           <p className={styles.cardSubtitles}>
-            Your credit card will be stored with out secure partner{" "}
+            Your credit card will be stored with out secure partner
             <a
               target="_blank"
               href="https://stripe.com/"
@@ -91,6 +81,7 @@ const editPaymentMethod = ({
             label={"Cancel"}
             width={"144px"}
             backgroundColor={"transparent"}
+            hoverColor={"transparent"}
             style={{ color: "black", fontFamily: "Roboto", fontWeight: 400 }}
           />
         </div>
@@ -103,7 +94,9 @@ const FormikEditPaymentInfo = withFormik({
   mapPropsToValues(props: any) {
     return {
       creditCardNumber: props.creditCardNumber || "",
-
+      creditCardNumberMM: "",
+      creditCardNumberYY: "",
+      creditCardNumberCVC: "",
       onClose: props.onClose,
       onSave: props.onSave,
       contentStyle: props.contentStyle,
@@ -128,6 +121,18 @@ const FormikEditPaymentInfo = withFormik({
       .typeError("not a valid number")
       .positive("not a valid number")
       .required("Card number is required"),
+    creditCardNumberMM: Yup.number()
+      .typeError("MM is not valid ")
+      .positive("MM is not valid ")
+      .required("Month is required"),
+    creditCardNumberYY: Yup.number()
+      .typeError("YY is not valid number")
+      .positive("YY is not valid number")
+      .required("Year is required"),
+    creditCardNumberCVC: Yup.number()
+      .typeError("CVC is not a valid number")
+      .positive("CVC is not a valid number")
+      .required("CVC is required"),
   }),
 })(editPaymentMethod);
 export default FormikEditPaymentInfo;

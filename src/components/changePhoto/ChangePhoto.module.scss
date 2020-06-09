@@ -13,16 +13,17 @@ $border-color: #dddddd;
 }
 
 .imageEditor {
-  margin: 32px 0;
-  padding-bottom: 32px;
+  margin: 32px 0 0 0;
+  padding-bottom: 16px;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid $border-color;
 }
 .linksWrapper {
   display: flex;
   color: black;
   justify-content: center;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 16px;
   .changePhotoLink {
     margin: 0;
     border-top: 1px solid $border-color;
@@ -39,7 +40,7 @@ $border-color: #dddddd;
   }
 }
 .buttonWrapper {
-  margin-top: 32px;
+  margin: 16px 0 32px 0;
   display: flex;
   justify-content: center;
 }

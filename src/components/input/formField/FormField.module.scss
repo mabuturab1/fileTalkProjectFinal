@@ -17,10 +17,30 @@
   max-width: 400px;
   flex: 1;
 }
+.removeMinMax {
+  min-width: unset;
+  max-width: unset;
+}
+
 .errorWrapper {
   color: #ff604f;
   display: block;
 }
 .autoMaxWidth {
   max-width: none;
+}
+.removeInputBorder,
+.removeInputBorder input {
+  border: none !important;
+}
+.removeInputPadding input {
+  padding: 0 !important;
+}
+.removeInputPaddingLeftRight input {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.removeInputPaddingTopBottom input {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }

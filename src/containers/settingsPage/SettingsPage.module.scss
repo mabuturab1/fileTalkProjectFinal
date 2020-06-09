@@ -25,12 +25,12 @@ $content-side-padding: 50px;
   .content {
     width: 100%;
     position: relative;
+
     display: flex;
     overflow: hidden;
     flex: 1;
     align-items: center;
-    border-bottom: 1px solid #dddddd;
-    border-right: 1px solid #dddddd;
+
     .menu {
       flex: 0 0 $menu-width;
       width: $menu-width;
@@ -41,7 +41,7 @@ $content-side-padding: 50px;
     .menuList {
       position: absolute;
       top: 80px;
-      left: 5px;
+      left: 25px;
     }
   }
   .pageWrapper {

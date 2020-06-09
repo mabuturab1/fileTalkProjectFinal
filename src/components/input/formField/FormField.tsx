@@ -4,17 +4,21 @@ import { Form, Input, Icon } from "semantic-ui-react";
 interface formFieldProps {
   handleChange: any;
   value: string;
-  error: string;
+  error?: string;
   elementConfig: { label?: string; placeholder: string; type?: string };
   name: string;
   touched: boolean;
   icon?: string;
+  fieldWrapperStyle?: any;
   inputStyle?: any;
   labelStyle?: any;
   errorStyle?: any;
   isInputFullWidth?: boolean;
   customIcon?: string;
   maxWidthAuto?: boolean;
+  removeBorder?: boolean;
+  acceptCustomWidth?: boolean;
+  removeInputPadding?: "leftRight" | "topBottom" | "allSides";
 }
 const formField = (props: formFieldProps) => {
   let labelStyle: any = {
@@ -42,8 +46,17 @@ const formField = (props: formFieldProps) => {
     ...inputStyle,
     ...props.inputStyle,
   };
+  if (props.removeBorder) inputClasses.push(styles.removeInputBorder);
+  if (props.acceptCustomWidth) inputClasses.push(styles.removeMinMax);
+  if (props.removeInputPadding)
+    if (props.removeInputPadding == "leftRight") {
+      inputClasses.push(styles.removeInputPaddingLeftRight);
+    } else if (props.removeInputPadding == "topBottom")
+      inputClasses.push(styles.removeInputPaddingTopBottom);
+    else if (props.removeInputPadding == "allSides")
+      inputClasses.push(styles.removeInputPadding);
   return (
-    <Form.Field inline>
+    <Form.Field inline style={props.fieldWrapperStyle}>
       {props.elementConfig.label != null ? (
         <label className={styles.myLabel} style={labelStyle}>
           {props.elementConfig.label}

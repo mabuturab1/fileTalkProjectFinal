@@ -75,78 +75,90 @@ const OrderSummary = (props: OrderSummaryProps) => {
         />
       ) : null}
       <div className={styles.orderContent} style={props.contentStyle}>
-        <div className={styles.subscriptionDetails}>
-          <ToggleButton
-            labelStyle={{ fontWeight: "bold" }}
-            label={"Billing Annually"}
-            checked={props.isAnnualBilling}
-            onChange={billedAnuallyChanged}
-          />
-          <span
-            className={
-              props.isAlreadySet
-                ? [styles.discountStyle, styles.smallText].join(" ")
-                : styles.discountStyle
-            }
-          >
-            {getDiscount()}
-          </span>
-        </div>
-        <ul className={styles.orderDetailList}>
-          <li className={styles.singleItem}>
-            <span className={styles.label}>Plan</span>
-            <span className={styles.value}>{props.data.plan}</span>
-          </li>
-          {!props.isAlreadySet ? (
+        <div className={styles.content}>
+          <div className={styles.subscriptionDetails}>
+            <ToggleButton
+              labelStyle={{ fontWeight: "bold" }}
+              label={"Billing Annually"}
+              checked={props.isAnnualBilling}
+              onChange={billedAnuallyChanged}
+            />
+            <span
+              className={
+                props.isAlreadySet
+                  ? [styles.discountStyle, styles.smallText].join(" ")
+                  : styles.discountStyle
+              }
+            >
+              {getDiscount()}
+            </span>
+          </div>
+          <ul className={styles.orderDetailList}>
             <li className={styles.singleItem}>
-              <span className={styles.label}>Starting Date</span>
-              <span className={styles.value}>{props.data.startingDate}</span>
+              <span className={styles.label}>Plan</span>
+              <span className={styles.value}>{props.data.plan}</span>
             </li>
-          ) : (
-            <li className={styles.singleItem}>
-              <span className={styles.label}>Price</span>
-              <span
-                className={styles.value}
-              >{`${props.data.pricePerMonth}`}</span>
-              {props.data.discountFigure !== null &&
-              props.isAnnualBilling &&
-              props.currentPackage === CurrentPackage.Premium ? (
+            {!props.isAlreadySet ? (
+              <li className={styles.singleItem}>
+                <span className={styles.label}>Starting Date</span>
+                <span className={styles.value}>{props.data.startingDate}</span>
+              </li>
+            ) : (
+              <li className={styles.singleItem}>
+                <span className={styles.label}>Price</span>
                 <span
                   className={styles.value}
-                >{`(discounted ${props.data.discountFigure})`}</span>
-              ) : null}
+                >{`${props.data.pricePerMonth}`}</span>
+                {props.data.discountFigure !== null &&
+                props.isAnnualBilling &&
+                props.currentPackage === CurrentPackage.Premium ? (
+                  <span
+                    className={styles.value}
+                  >{`(discounted ${props.data.discountFigure})`}</span>
+                ) : null}
+              </li>
+            )}
+            <li className={styles.singleItem}>
+              <span className={styles.label}>Renew Date</span>
+              <span className={styles.value}>{props.data.renewDate}</span>
             </li>
-          )}
-          <li className={styles.singleItem}>
-            <span className={styles.label}>Renew Date</span>
-            <span className={styles.value}>{props.data.renewDate}</span>
-          </li>
 
-          <Divider />
-          <li className={styles.singleItem}>
-            <span className={[styles.label, styles.bolderText].join(" ")}>
-              Billing
-            </span>
-            <span className={[styles.label, styles.bolderText].join(" ")}>
-              {props.data.totalAmount}
-            </span>
-          </li>
-        </ul>
+            <Divider />
+            <li className={styles.singleItem}>
+              <span className={[styles.label, styles.bolderText].join(" ")}>
+                Billing
+              </span>
+              <span className={[styles.label, styles.bolderText].join(" ")}>
+                {props.data.totalAmount}
+              </span>
+            </li>
+          </ul>
+        </div>
       </div>
       {props.isAlreadySet ? (
-        <div
-          className={styles.cancelSubscription}
-          onClick={() => toggleConfirmationDialog(true)}
-        >
-          <p className={styles.cancelSubscriptionText}>Cancel Subscription</p>
+        <div className={styles.cancelSubscription}>
+          <p
+            className={styles.cancelSubscriptionText}
+            onClick={() => toggleConfirmationDialog(true)}
+          >
+            Cancel Subscription
+          </p>
         </div>
       ) : null}
+
       {!props.isAlreadySet ? (
         <div className={styles.buttonWrapper}>
           <Button onClick={props.onProceed} width={"240px"} label={"Proceed"} />
         </div>
       ) : (
-        <div className={[styles.buttonWrapper, styles.alignStart].join(" ")}>
+        <div
+          className={[
+            styles.buttonWrapper,
+            styles.alignStart,
+            styles.borderTop,
+            styles.buttonWrapperChangePlan,
+          ].join(" ")}
+        >
           <div className={styles.singleButtonWrapper}>
             <Button onClick={props.onClose} label={"Cancel"} />
           </div>

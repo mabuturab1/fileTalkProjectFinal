@@ -8,7 +8,7 @@ $offers-height: 400px;
   width: 100%;
   height: 100%;
   font-family: "Montserrat", sans-serif;
-  border: 1px solid $border-color;
+
   .header {
     background-color: $header-background;
     border-radius: 10px 10px 0px 0px;
@@ -67,6 +67,7 @@ $offers-height: 400px;
     font-size: 11px;
     color: $subscription-offers-color;
     padding: 3px 0rem;
+    font-weight: 400;
   }
   .buttonWrapper {
     margin: 0rem 0 32px 0;

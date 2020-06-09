@@ -1,12 +1,18 @@
 $border-color: #dddddd;
 .billingForm {
   width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.content {
+  padding: 0;
 }
 .singleForm {
   margin: 16px 0;
 }
-.buttonWrapper {
-  margin: 16px 0;
+.singleForm > div {
+  margin: 0 !important;
 }
 .cardSubtitles {
   color: black;
@@ -16,11 +22,12 @@ $border-color: #dddddd;
 .buttonWrapper {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin: 40px 0 32px 0;
 }
 .cardDetails {
-  margin-top: 48px;
+  margin-top: 32px;
 }
 .personalInfo {
-  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $border-color;
 }

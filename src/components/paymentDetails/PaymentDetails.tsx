@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./PaymentDetails.module.scss";
-import { Form, Divider } from "semantic-ui-react";
+import { Form } from "semantic-ui-react";
 import Button from "../input/button/Button";
 
 import InputFormField from "../input/formField/FormField";
 import CountryList from "../countryList/CountryList";
 
 import { withFormik } from "formik";
-
+import CreditCardInput from "../creditCardInput/CreditCardInput";
 import * as Yup from "yup";
 
 const PaymentDetails = ({
@@ -29,10 +29,6 @@ const PaymentDetails = ({
       label: "Country",
       placeholder: "eg. South Korea",
     },
-    creditCardNumber: {
-      label: "Credit or debit card",
-      placeholder: "Card Number",
-    },
   };
   const handleChangeDropdown = (e: any, { name, value }: any) =>
     setFieldValue(name, value);
@@ -40,54 +36,51 @@ const PaymentDetails = ({
   return (
     <Form>
       <div className={styles.billingForm} style={values.contentStyle}>
-        <div className={styles.personalInfo}>
-          <div className={styles.singleForm}>
-            <InputFormField
-              error={errors.fullName}
-              elementConfig={formData.fullName}
+        <div className={styles.content}>
+          <div className={styles.personalInfo}>
+            <div className={styles.singleForm}>
+              <InputFormField
+                error={errors.fullName}
+                elementConfig={formData.fullName}
+                handleChange={handleChange}
+                name={"fullName"}
+                value={values.fullName}
+                touched={touched.fullName}
+                labelStyle={{ width: "80px" }}
+                maxWidthAuto={true}
+              />
+            </div>
+            <div className={styles.singleForm}>
+              <CountryList
+                error={errors.country}
+                elementConfig={formData.country}
+                handleChange={handleChangeDropdown}
+                name={"country"}
+                value={values.country}
+                touched={touched.country}
+                labelStyle={{ width: "80px" }}
+                maxWidthAuto={true}
+              />
+            </div>
+          </div>
+          <div className={styles.cardDetails}>
+            <CreditCardInput
+              values={values}
+              errors={errors}
+              touched={touched}
               handleChange={handleChange}
-              name={"fullName"}
-              value={values.fullName}
-              touched={touched.fullName}
-              labelStyle={{ width: "80px" }}
-              maxWidthAuto={true}
             />
+            <p className={styles.cardSubtitles}>
+              Your credit card will be stored with out secure partner{" "}
+              <a
+                target="_blank"
+                href="https://stripe.com/"
+                rel="noopener noreferrer"
+              >
+                Stripe
+              </a>
+            </p>
           </div>
-          <div className={styles.singleForm}>
-            <CountryList
-              error={errors.country}
-              elementConfig={formData.country}
-              handleChange={handleChangeDropdown}
-              name={"country"}
-              value={values.country}
-              touched={touched.country}
-              labelStyle={{ width: "80px" }}
-              maxWidthAuto={true}
-            />
-          </div>
-        </div>
-        <Divider />
-        <div className={styles.cardDetails}>
-          <InputFormField
-            customIcon={"icon-card-icon"}
-            error={errors.creditCardNumber}
-            elementConfig={formData.creditCardNumber}
-            handleChange={handleChange}
-            name={"creditCardNumber"}
-            value={values.creditCardNumber}
-            touched={touched.creditCardNumber}
-            isInputFullWidth={true}
-          />
-          <p className={styles.cardSubtitles}>
-            Your credit card will be stored with out secure partner{" "}
-            <a
-              target="_blank"
-              href="https://stripe.com/"
-              rel="noopener noreferrer"
-            >
-              Stripe
-            </a>
-          </p>
         </div>
         <div className={styles.buttonWrapper}>
           {!errors.paymentError ? (
@@ -123,6 +116,9 @@ const FormikPaymentBillingInfo = withFormik({
       country: props.country || "",
       creditCardNumber: props.creditCardNumber || "",
       totalAmount: props.totalAmount || 0,
+      creditCardNumberMM: "",
+      creditCardNumberYY: "",
+      creditCardNumberCVC: "",
       paymentError: false,
       onClose: props.onClose,
       onSubmit: props.onPay,
@@ -151,6 +147,18 @@ const FormikPaymentBillingInfo = withFormik({
       .typeError("not a valid number")
       .positive("not a valid number")
       .required("Card number is required"),
+    creditCardNumberMM: Yup.number()
+      .typeError("MM is not valid ")
+      .positive("MM is not valid ")
+      .required("Month is required"),
+    creditCardNumberYY: Yup.number()
+      .typeError("YY is not valid number")
+      .positive("YY is not valid number")
+      .required("Year is required"),
+    creditCardNumberCVC: Yup.number()
+      .typeError("CVC is not a valid number")
+      .positive("CVC is not a valid number")
+      .required("CVC is required"),
   }),
 })(PaymentDetails);
 export default FormikPaymentBillingInfo;
