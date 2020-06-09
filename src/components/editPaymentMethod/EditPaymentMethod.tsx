@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./EditPaymentMethod.module.scss";
 import HeaderText from "../headerText/HeaderText";
-import InputFormField from "../input/formField/FormField";
+
 import PaymentMethod from "../../assets/images/PaymentMethod.png";
 import PaymentMethod1 from "../../assets/images/PaymentMethod1.png";
 import PaymentMethod2 from "../../assets/images/PaymentMethod2.png";

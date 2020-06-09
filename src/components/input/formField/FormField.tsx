@@ -49,11 +49,11 @@ const formField = (props: formFieldProps) => {
   if (props.removeBorder) inputClasses.push(styles.removeInputBorder);
   if (props.acceptCustomWidth) inputClasses.push(styles.removeMinMax);
   if (props.removeInputPadding)
-    if (props.removeInputPadding == "leftRight") {
+    if (props.removeInputPadding === "leftRight") {
       inputClasses.push(styles.removeInputPaddingLeftRight);
-    } else if (props.removeInputPadding == "topBottom")
+    } else if (props.removeInputPadding === "topBottom")
       inputClasses.push(styles.removeInputPaddingTopBottom);
-    else if (props.removeInputPadding == "allSides")
+    else if (props.removeInputPadding === "allSides")
       inputClasses.push(styles.removeInputPadding);
   return (
     <Form.Field inline style={props.fieldWrapperStyle}>
